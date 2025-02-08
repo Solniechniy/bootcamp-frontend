@@ -14,6 +14,7 @@ import { clusterApiUrl } from '@solana/web3.js';
 import {
   PhantomWalletAdapter,
   SolflareWalletAdapter,
+  UnsafeBurnerWalletAdapter,
 } from '@solana/wallet-adapter-wallets';
 
 import '@solana/wallet-adapter-react-ui/styles.css';
@@ -35,7 +36,10 @@ export const WalletProvider = ({ children }: PropsWithChildren) => {
   const endpoint = useMemo(() => clusterApiUrl(network), [network]);
 
   const wallets = useMemo(
-    () => [new PhantomWalletAdapter(), new SolflareWalletAdapter()],
+    () => [
+      //TODO: Add wallets (Phantom and Solflare) here that defined in imports
+      new UnsafeBurnerWalletAdapter(),
+    ],
     [],
   );
 
