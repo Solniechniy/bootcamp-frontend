@@ -36,13 +36,13 @@ cd lab-1 && npm install
 
 ## 4. Adding the code
 
-In the first task, you should add additional wallets in src/providers/index.tsx:
+In the first task, you should add additional wallets in src/providers/index.tsx. If you have no idea how it should looks like -> ./lab-1/src/assets/ExpectedResult.png
 
 ---
 
 ## 5. Starting the project
 
-After adding the wallets start the project by npm run dev in the root of the first lab.
+After adding the wallets start the project by npm run dev in the root of the first lab and try to connect by selected wallet.
 
 ```bash
 cd lab-1 && npm run dev
@@ -52,4 +52,4 @@ cd lab-1 && npm run dev
 
 ## 6. Results
 
-After a successful connection, you’ll be able to copy the publicKey and send it to the classroom as proof.
+After a successful connection, you’ll be able to copy the publicKey and send it to the classroom as proof. Could you share your publicKey to anyone?
